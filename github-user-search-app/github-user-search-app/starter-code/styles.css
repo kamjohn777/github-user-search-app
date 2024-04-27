@@ -1,0 +1,83 @@
+:root {
+    --dark-mode-bg: #141c2f;
+    --dark-mode-text: #f6fbfc;
+    --element-bg-dark: #1f2a48;
+    --darkmode-container-bg: #141c2f;
+
+    --light-mode-bg: #f5f8ff;
+    --light-mode-text: #272a31;
+    --element-bg-light: #272a31;
+}
+
+
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.dark-theme {
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-mode-text);
+}
+
+.title-toggle-container {
+    display: flex;
+    width: 100%;
+    /* background: red; */
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ui.header.dark-theme {
+    background-color: var(--darkmode-container-bg);
+    color: var(--dark-mode-text);
+}
+
+    .ui.container {
+        width: 800px;
+        height: 520px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .ui.search {
+        /* background-color: yellow; */
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .ui.search.dark-theme {
+        background-color: var(--element-bg-dark);
+        color: var(--dark-mode-text);
+    }
+    
+    .ui.search .ui.icon.input {
+        flex-grow: 1;
+        /* background-color: red; */
+    }
+
+    .ui.search .ui.icon.input input {
+        background-color: transparent;
+        border: none;
+    }
+    
+    .ui.search .ui.icon.input i {
+        color: blue;
+    }
+    
+    .ui.search .ui.button {
+        background-color: blue;
+        color: white; /* You might want to change the text color to ensure it's visible against the blue background */
+    }
+
+    .ui.segment.dark-theme {
+        background-color: var(--element-bg-dark);
+        color: var(--dark-mode-text);
+    }

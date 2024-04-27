@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>GitHub User Search</title>
+</head>
+<body class="body-wrap">
+  <div class="ui container">
+    <div class="title-toggle-container">
+      <h1 class="ui header">devfinder</h1>
+      <div class="ttc-btn-wrap">
+        <button class="ui button light-theme-button">Light</button>
+        <button class="ui button dark-theme-button">Dark</button>
+      </div>
+    </div>
+    <div class="ui search">
+      <div class="ui left icon input">
+        <i class="search icon"></i>
+        <input type="text" placeholder="Search...">
+      </div>
+      <div style="flex-grow: 1;"></div>
+      <button class="ui button">Search</button>
+    </div>
+    <div class="ui segment">
+      <h2 class="ui header">User Information</h2>
+      <img id="profile-picture" src="" alt="Profile Picture">
+      <p>Username: <span id="username"></span></p>
+      <p>Joined: <span id="joined"></span></p>
+      <div class="ui segment">
+        <p>Repos: <span id="repos"></span></p>
+        <p>Followers: <span id="followers"></span></p>
+        <p>Following: <span id="following"></span></p>
+      </div>
+      <div class="ui segment">
+        <p><i class="location arrow icon"></i>Location: <span id="location"></span></p>
+        <p><i class="twitter icon"></i>Twitter: <a id="twitter-link" href=""></a></p>
+        <p><i class="github icon"></i>GitHub: <a id="github-link" href=""></a></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
