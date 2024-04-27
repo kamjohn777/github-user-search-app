@@ -142,3 +142,7 @@ body.dark-theme {
     #profile-picture {
         height: 90px;
     }
+
+   .fs-segment {
+    font-size: 20px;
+   }
