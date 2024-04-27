@@ -36,6 +36,8 @@ $(document).ready(function() {
         // Set the text of the #username span to the user's login
         $('#username').text(data.login || "No information");
 
+        $('#big_userName').text(data.login || "No information");   
+
         // Set the src of the #profile-picture img to the user's avatar
         $('#profile-picture').attr('src', data.avatar_url || "");
 
