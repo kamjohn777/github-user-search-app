@@ -7,6 +7,8 @@
     --light-mode-bg: #f5f8ff;
     --light-mode-text: #272a31;
     --element-bg-light: #272a31;
+
+    --btn-color: #0477ff;
 }
 
 
@@ -29,7 +31,8 @@ body.dark-theme {
     width: 100%;
     /* background: red; */
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    /* margin-bottom: 30px; */
 }
 
 .ui.header.dark-theme {
@@ -39,18 +42,31 @@ body.dark-theme {
 
     .ui.container {
         width: 800px;
-        height: 520px;
+        height: fit-content;
+        /* height: 520px; */
         margin-left: auto !important;
         margin-right: auto !important;
     }
 
     .ui.search {
         /* background-color: yellow; */
-        height: 80px;
+        /* height: 80px; */
+        height: 70px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        /* box-shadow: 5px 5px 15px #e2e2e2; */
+    }
+
+    .ui.search:not(.dark-theme) {
+        box-shadow: 5px 5px 15px #e2e2e2;
+    }
+
+    .ui.segment.container:not(.dark-theme) {
+        box-shadow: 5px 5px 15px #e2e2e2;
     }
 
     .ui.search.dark-theme {
@@ -66,18 +82,63 @@ body.dark-theme {
     .ui.search .ui.icon.input input {
         background-color: transparent;
         border: none;
+        font-size: 20px;
     }
     
     .ui.search .ui.icon.input i {
-        color: blue;
+        color: var(--btn-color);
+        font-size: 20px;
     }
     
     .ui.search .ui.button {
-        background-color: blue;
-        color: white; /* You might want to change the text color to ensure it's visible against the blue background */
+        background-color: var(--btn-color);
+        color: white;
+        width: 105px;
+        height: 45px;
+        border-radius: 10px;
+    
+    }
+
+    .ui.segment.container > div:first-child {
+       display: flex;
+       justify-content: space-evenly;
+    }
+
+    .ui.segment.container > div:nth-child(2) {
+        /* background-color: var(--dark-mode-bg); */
+        display: flex;
+        justify-content: space-around;
+     }
+
+    .ui.segment.container > div:nth-child(2).dark-theme {
+        background-color: var(--dark-mode-bg);
+        /* display: flex; */
+     }
+
+.profile-user-titles {
+        display: flex;
+        flex-direction: column;
+        flex: 0.5;
+        align-items: flex-start;
+        /* background: red; */
+        width: fit-content;
+    }
+
+    .ui.segment.container > div:nth-child(3) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        /* width: 430px; */
+        justify-items: center;
+        /* align-items: end; */
     }
 
     .ui.segment.dark-theme {
         background-color: var(--element-bg-dark);
         color: var(--dark-mode-text);
+    }
+
+    #profile-picture {
+        height: 90px;
     }
