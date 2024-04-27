@@ -5,6 +5,8 @@ $(document).ready(function() {
     $('.ui.header').removeClass('dark-theme');
     $('.ui.search').removeClass('dark-theme');
     $('.ui.segment.container').removeClass('dark-theme'); 
+    $('.ui.icon.input input').removeClass('dark-theme');
+
     console.log('Light theme activated');
   });
 
@@ -14,6 +16,7 @@ $(document).ready(function() {
     $('.ui.header').addClass('dark-theme');
     $('.ui.search').addClass('dark-theme');
     $('.ui.segment.container').addClass('dark-theme');
+    $('.ui.icon.input input').addClass('dark-theme');
     console.log('Dark theme activated');
   });
 });
@@ -48,6 +51,10 @@ $(document).ready(function() {
 
         // Set the user's location
         $('#location').text(data.location || "No information");
+
+        // Set the href of the #username-link anchor to the user's GitHub URL
+        $('#username-link').attr('href', data.html_url || "#");
+
 
         // Set the user's Twitter link
         if (data.twitter_username) {

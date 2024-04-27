@@ -84,6 +84,13 @@ body.dark-theme {
         border: none;
         font-size: 20px;
     }
+
+    .ui.search .ui.icon.input input.dark-theme {
+        /* background-color: transparent;
+        border: none;
+        font-size: 20px; */
+        color: var(--dark-mode-text);
+    }
     
     .ui.search .ui.icon.input i {
         color: var(--btn-color);
@@ -146,3 +153,14 @@ body.dark-theme {
    .fs-segment {
     font-size: 20px;
    }
+
+   .ui.search .ui.icon.input input:not(.dark-theme) {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    /* color: white; */
+}
+
+/* .dark-mode {
+    color: var(--dark-mode-text);
+} */
