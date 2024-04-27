@@ -5,7 +5,8 @@ $(document).ready(function() {
     $('.ui.header').removeClass('dark-theme');
     $('.ui.search').removeClass('dark-theme');
     $('.ui.segment.container').removeClass('dark-theme'); 
-    $('.ui.icon.input input').removeClass('dark-theme');
+    // $('.ui.icon.input input').removeClass('dark-theme');
+    $('.ui.icon.input input:not(#profile-picture)').removeClass('dark-theme');
 
     console.log('Light theme activated');
   });
@@ -16,7 +17,8 @@ $(document).ready(function() {
     $('.ui.header').addClass('dark-theme');
     $('.ui.search').addClass('dark-theme');
     $('.ui.segment.container').addClass('dark-theme');
-    $('.ui.icon.input input').addClass('dark-theme');
+    // $('.ui.icon.input input').addClass('dark-theme');
+    $('.ui.icon.input input:not(#profile-picture)').addClass('dark-theme');
     console.log('Dark theme activated');
   });
 });
