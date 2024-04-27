@@ -164,3 +164,147 @@ body.dark-theme {
 /* .dark-mode {
     color: var(--dark-mode-text);
 } */
+
+@media only screen and (max-width: 600px) {
+
+    .ui.container {
+        width: 100%;
+        padding: 0 15px;
+        /* margin-top: 450px; */
+    }
+
+    .title-toggle-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ui.search {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .ui.search .ui.icon.input {
+        margin-bottom: 10px;
+    }
+
+    .ui.search .ui.button {
+        width: 100%;
+    }
+
+    .ui.segment.container > div:first-child,
+    .ui.segment.container > div:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ui.segment.container > div:nth-child(3) {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-user-titles {
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 601px) {
+
+    .ui.container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .title-toggle-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ui.search {
+        flex-direction: column;
+        height: 100px; /* Adjust this value as needed */
+    }
+
+    .ui.search .ui.icon.input {
+        margin-bottom: 10px;
+    }
+
+    .ui.search .ui.button {
+        width: 100%;
+    }
+
+    .ui.segment.container > div:first-child,
+    .ui.segment.container > div:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ui.segment.container > div:nth-child(3) {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-user-titles {
+        align-items: center;
+    }
+
+    .u_s-repo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 590px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 300px;
+    }
+    
+    .ui.container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .title-toggle-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ui.search {
+        flex-direction: column;
+        height: 130px;
+    }
+
+    .ui.search .ui.icon.input {
+        margin-bottom: 10px;
+    }
+
+    .ui.search .ui.button {
+        width: 100%;
+        height: 47px;
+    }
+
+    .ui.segment.container > div:first-child,
+    .ui.segment.container > div:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ui.segment.container > div:nth-child(3) {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-user-titles {
+        align-items: center;
+    }
+
+    .u_s-repo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
